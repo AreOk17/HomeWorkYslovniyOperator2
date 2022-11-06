@@ -15,9 +15,17 @@ if (clientOS==1)
      if (DiviceOlder2015)
          System.out.println("Установите версию для Android по ссылке.");
      else { System.out.println("Установите облегченную версию для Android по ссылке");
+         System.out.println("введите год");
          int Year = 100;
-         if (VesokosniyGod)
-  }
+
+         if (Year / 4 == 0 && Year / 400 == 0 && Year / 100 != 0)
+         {
+             System.out.println(Year+" Год - Весокосный год.");
+         }
+             else
+                 System.out.println(Year+ "Год не весокосный");
+
+     }
  }
 }
 }
